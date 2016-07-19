@@ -8,7 +8,7 @@
 	<com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Incoming auto call record" android:key="auto_call_record_in" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
     <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Outgoing auto call record" android:key="auto_call_record_out" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
 	
-	<PreferenceCategory android:title=" Call Delay Control " app:packageNameToKill="com.android.incallui"/>
+	<PreferenceCategory android:title=" Call Delay Control " />
 	
 	<com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/call_delay_entries" android:title="Call delay" android:key="call_delay" android:summary="%s" android:defaultValue="2500" android:entryValues="@array/call_delay_values" />
 	
