@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto">
+				  
+    <PreferenceCategory android:title="Status Text Enabling it" />
+	<com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Custom text" android:key="CustomTxt_toggle" android:defaultValue="true" android:summaryOn="@string/summaryOn" android:summaryOff="@string/summaryOff" />
+    <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Change custom text color" android:key="CustomTxt_color" android:summary="Choose color" android:dependency="CustomTxt_toggle" android:defaultValue="-13542266" alphaSlider="true" hexValue="true" />
+    <com.wubydax.romcontrol.v2.prefs.MyEditTextPreference android:title="Change custom text" android:key="CustomTxt_text" android:summary="Edit text" android:dependency="CustomTxt_toggle" android:defaultValue="Assaad" android:dialogTitle="Edit text" />
+    
+	<PreferenceCategory android:title="Lockscreen Text Enabling it" />
+	
+	<com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference android:title="Use Custom Carrier Text" android:key="custom_lock_carrier" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" app:packageNameToKill="com.android.systemui"/>
+    <com.wubydax.romcontrol.v2.prefs.MyEditTextPreference android:title="Carrier Custom Text" android:key="custom_lock_carrier_text" android:summary="Edit carrier label" android:dependency="custom_lock_carrier" android:defaultValue="" android:dialogTitle="Set Custom Text" app:packageNameToKill="com.android.systemui"/>
+    <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Carrier Text" android:key="carrier_color" android:summary="Choose carrier color" android:defaultValue="-1" alphaSlider="true" app:packageNameToKill="com.android.systemui"/>
+    
+	
+	<PreferenceCategory android:title=" Custom Carrier  " />
+	
+	<com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Custom Carrier Color" android:key="CustomCarrierColor" android:defaultValue="\#ffffffff" app:packageNameToKill="com.android.systemui"/>
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Custom Carrier Right of Wifi/Signal Combo" android:key="CustomCarrierRight" android:defaultValue="false" android:summaryOn="Show" android:summaryOff="Hide" app:packageNameToKill="com.android.systemui"/>
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Custom Carrier Center of Wifi/Signal Combo" android:key="CustomCarrierCenter" android:defaultValue="false" android:summaryOn="Show" android:summaryOff="Hide" app:packageNameToKill="com.android.systemui"/>
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Custom Carrier Left of Wifi/Signal Combo" android:key="CustomCarrierLeft" android:defaultValue="false" android:summaryOn="Show" android:summaryOff="Hide" app:packageNameToKill="com.android.systemui"/>
+</PreferenceScreen>

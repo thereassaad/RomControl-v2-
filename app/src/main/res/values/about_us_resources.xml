@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/*      Created by Roberto Mariani and Anna Berkovitch, 2015-2016
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU General Public License for more details.
+
+        You should have received a copy of the GNU General Public License
+        along with this program.  If not, see <http://www.gnu.org/licenses/>.*/-->
+<resources>
+
+
+    <!--Contact info arrays-->
+
+    <!--In this array you will put the icons for contact information,
+    for example xda icon for your xda thread, site icon for your site, facebook icon and so on-->
+    <array name="about_contact_us_drawables">
+        <item>@drawable/icon_2</item>
+    </array>
+
+    <!--In this array you will put the titles for your contact info items. Keep the order consistent between all 3 arrays-->
+    <string-array name="about_contact_us_text">
+        <item>XDA</item>
+    </string-array>
+
+    <!--In this array you will put the titles for the URL strings that will open once a user clicked on the item-->
+    <string-array name="about_contact_us_links" translatable="false">
+        <item>http://forum.xda-developers.com/member.php?u=5405448</item>
+    </string-array>
+
+
+
+    <!--Team info arrays-->
+    <array name="about_team_drawables">
+        <item>@drawable/icon_2</item>
+    </array>
+    <string-array name="about_team_names">
+        <item>Developed by thereassaad</item>
+    </string-array>
+    <string-array name="about_team_links" translatable="false">
+        <item>http://forum.xda-developers.com/member.php?u=5405448</item>
+    </string-array>
+
+
+
+    <!--Credits and thanks info arrays-->
+    <array name="about_credits_drawables">
+        <item>@drawable/icon_1</item>
+        <item>@drawable/icon_3</item>
+		<item>@drawable/icon_7</item>
+		<item>@drawable/icon_8</item>
+		<item>@drawable/td</item>
+    </array>
+    <string-array name="about_credits_names">
+        <item>daxgirl  ( RomControl Project Owner , Open Source ) </item>
+        <item>Wuby986  ( RomControl Project Owner , Open Source ) </item>
+		<item>Hangout Group  ( sac23 , geiti94 ,darkera13 , slink_59 , Albe95 , Ale95 , tamirda , Androidwizzard , _Alex74_ ) </item>
+		<item>Ravian29  ( A tons of thanks bro ,  ) </item>
+		<item>tdunham ( A tons of thanks mate , for All devs around ur thread , hats off to All of u Guys  ) </item>
+    </string-array>
+    <string-array name="about_credits_links" translatable="false">
+        <item>http://forum.xda-developers.com/member.php?u=4714483</item>
+        <item>http://forum.xda-developers.com/member.php?u=5493353</item>
+		<item>https://www.google.com/</item>
+		<item>http://ndroid.io/</item>
+		<item>http://forum.xda-developers.com/showthread.php?t=2799050</item>
+    </string-array>
+</resources>

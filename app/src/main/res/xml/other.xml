@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title=" 6thGear Reboot ">
+
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Gear reboot view visibility" android:key="gear_reboot_view_visibility" android:defaultValue="true" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Gear reboot view color" android:key="gear_reboot_view_color" android:defaultValue="\#00000000" alphaSlider="true" hexValue="true" />
+    
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:title=" Another Elements ">
+	
+	    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Multiwindow" android:key="multi_window_enabled" android:defaultValue="false" android:summaryOn="Option enabled" android:summaryOff="Option disabled" />
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Multiwindow Always on After Reboot" android:key="multiwindow_enabled_always" android:defaultValue="false" android:summaryOn="Option enabled" android:summaryOff="Option disabled" />
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Outdoor Mode" android:key="display_outdoor_mode" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Wipe Hangouts cache - Automatic Reboot" android:key="script#hangouts_reset" android:summary="Clear Hangouts if not getting notifications" />
+    
+	    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Screen Pinning" android:key="lock_to_app_enabled" android:defaultValue="false" android:summaryOn="Option is currently enabled" android:summaryOff="Option is currently disabled" />
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Phone shortcut in Lockscreen" android:key="set_shortcuts_phone" android:defaultValue="1" android:summaryOn="Shown" android:summaryOff="Hidden" />
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Camera shortcut in Lockscreen" android:key="set_shortcuts_mode" android:defaultValue="1" android:summaryOn="Shown" android:summaryOff="Hidden" />
+
+	
+	</PreferenceCategory>
+	
+    <PreferenceCategory android:title="Wallpaper Animation">
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Wallpaper Tilt Effect" android:key="wallpaper_tilt_status" android:defaultValue="1" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+    
+	</PreferenceCategory>
+    
+	
+	<PreferenceCategory android:title=" Another Shortcut  ">
+	
+	
+	<com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+            android:summary="Best Root browser App"
+            app:componentName="com.speedsoftware.rootexplorer/com.speedsoftware.rootexplorer.RootExplorer"/>
+	
+	<com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+	        android:title="6thGear Toolbox"
+			android:icon="@drawable/toolbox"
+            android:summary="Toolbox On/Off , Choosing Apps , ReArranging Ur Apps "
+            app:componentName="com.wubydax.toolboxsettings/com.wubydax.toolboxsettings.ToolboxSettings"/>
+	
+	<com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+            android:summary="Reset launch preference"
+            android:title="GearTWSwipe"
+            app:componentName="com.wubydax.geartwswipe/com.wubydax.geartwswipe.ResetDialogActivity"/>
+	
+	<com.wubydax.romcontrol.v2.prefs.OpenAppPreference
+            app:componentName="eu.chainfire.supersu/eu.chainfire.supersu.MainActivity-Material"
+            android:title="SuperSU "
+            android:summary="Manage root permissions for apps and services"/>
+	
+	
+    <PreferenceScreen android:title="Development Settings" android:summary="open hidden development menu">
+        <intent android:targetPackage="com.android.settings" android:targetClass="com.android.settings.DevelopmentSettings" />
+    </PreferenceScreen>
+	
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:title=" Very USEFULL Threads  ">
+	
+	<PreferenceScreen
+            android:title="Unified TouchWiz guides thread"
+            android:icon="@drawable/td"
+            android:summary="Open the most developed guides thread for TW devices on XDA">
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="http://forum.xda-developers.com/showthread.php?t=2799050" />
+        </PreferenceScreen>
+		
+		
+    	<PreferenceScreen
+            android:title="Unified S6 TW MM guides thread"
+            android:icon="@drawable/icon_5"
+            android:summary="USEFULL thread Guides for TW MM on XDA">
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="http://forum.xda-developers.com/galaxy-s6/samsung-galaxy-s-6--s-6-edge-unified-development/devs-helpingd-devs-t3321679" />
+        </PreferenceScreen>
+		
+		
+	
+	    <PreferenceScreen
+            android:title="RomControl thread v2 "
+            android:icon="@drawable/icon_6"
+            android:summary="Everything u need it about RomControl u can find it here ">
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="http://forum.xda-developers.com/android/general/source-code-6thgear-romcontrol-v2-devs-t3411916" />
+        </PreferenceScreen>
+	
+	
+	
+	</PreferenceCategory>
+	
+</PreferenceScreen>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto">
+				  
+    <PreferenceCategory android:title="Music Control" />
+	
+	
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Music Control" android:key="volbtn_music_controls" android:defaultValue="false" app:rebootDevice="true"/>
+    <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/volbtn_timeout_entries" android:title="Button Delay" android:key="volbtn_timeout" android:summary="%s" android:dependency="volbtn_music_controls" android:defaultValue="350" android:entryValues="@array/volbtn_timeout_values" app:rebootDevice="true"/>
+    <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/recents_entries" android:title="Long press up button" android:key="volbtn_vol_up" android:summary="%s" android:dependency="volbtn_music_controls" android:defaultValue="87" android:entryValues="@array/recents_values" app:rebootDevice="true"/>
+    <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/recents_entries" android:title="Long press the button down" android:key="volbtn_vol_down" android:summary="%s" android:dependency="volbtn_music_controls" android:defaultValue="88" android:entryValues="@array/recents_values" app:rebootDevice="true"/>
+    
+	<PreferenceCategory android:title=" CM Music Visualizer " />
+	
+	
+    <com.wubydax.romcontrol.v2.prefs.MyCheckBoxPreference android:title="Music Visualizer" android:key="show_equalizer" android:summary="Enable Notification Panel Music Visualizer." android:defaultValue="false" />
+    <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/visualizer_style_entries" android:title="Choose Visualizer Style" android:key="equalizer_visualizer_style" android:summary="%s" android:dependency="show_equalizer" android:defaultValue="0" android:dialogTitle="Select Visualizer" android:entryValues="@array/visualizer_style_values" />
+    
+	<PreferenceCategory android:title="                                   USEFULL Music App " />
+	
+	
+	
+	<PreferenceCategory android:title=" Dolby Atmos " />
+	
+	<PreferenceScreen android:icon="@drawable/ic_dolby" android:title="Dolby Atmos" android:summary="">
+        <intent android:targetPackage="com.atmos.daxappUI" android:action="android.intent.category.DEFAULT" android:targetClass="com.atmos.daxappUI.MainActivity" />
+    </PreferenceScreen>
+	
+	<PreferenceCategory android:title=" Viper4Android " />
+	
+	<PreferenceScreen android:icon="@drawable/viper" android:title="Viper4Android" android:summary="">
+        <intent android:targetPackage="com.vipercn.viper4android_v2" android:action="android.intent.category.DEFAULT" android:targetClass="com.vipercn.viper4android_v2.activity.ViPER4Android" />
+    </PreferenceScreen>
+	
+</PreferenceScreen>
