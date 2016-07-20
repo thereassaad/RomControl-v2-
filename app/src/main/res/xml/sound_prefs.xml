@@ -6,9 +6,9 @@
 	
 	
     <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Music Control" android:key="volbtn_music_controls" android:defaultValue="false" app:rebootDevice="true"/>
-    <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/volbtn_timeout_entries" android:title="Button Delay" android:key="volbtn_timeout" android:summary="%s" android:dependency="volbtn_music_controls" android:defaultValue="350" android:entryValues="@array/volbtn_timeout_values" app:rebootDevice="true"/>
-    <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/recents_entries" android:title="Long press up button" android:key="volbtn_vol_up" android:summary="%s" android:dependency="volbtn_music_controls" android:defaultValue="87" android:entryValues="@array/recents_values" app:rebootDevice="true"/>
-    <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/recents_entries" android:title="Long press the button down" android:key="volbtn_vol_down" android:summary="%s" android:dependency="volbtn_music_controls" android:defaultValue="88" android:entryValues="@array/recents_values" app:rebootDevice="true"/>
+    <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/volbtn_timeout_entries" android:title="Button Delay" android:key="volbtn_timeout" android:summary="%s" android:dependency="volbtn_music_controls" android:defaultValue="350" android:entryValues="@array/volbtn_timeout_values" app:isSilent="false" app:rebootDevice="true"/>
+    <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/recents_entries" android:title="Long press up button" android:key="volbtn_vol_up" android:summary="%s" android:dependency="volbtn_music_controls" android:defaultValue="87" android:entryValues="@array/recents_values" app:isSilent="false" app:rebootDevice="true"/>
+    <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/recents_entries" android:title="Long press the button down" android:key="volbtn_vol_down" android:summary="%s" android:dependency="volbtn_music_controls" android:defaultValue="88" android:entryValues="@array/recents_values" app:isSilent="false" app:rebootDevice="true"/>
     
 	<PreferenceCategory android:title=" CM Music Visualizer " />
 	

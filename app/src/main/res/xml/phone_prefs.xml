@@ -5,12 +5,12 @@
 	
 	<PreferenceCategory android:title="AutoCall Recording " />
 	
-	<com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Incoming auto call record" android:key="auto_call_record_in" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
-    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Outgoing auto call record" android:key="auto_call_record_out" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+	<com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Incoming auto call record" android:key="auto_call_record_in" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" app:packageNameToKill="com.android.incallui" />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Outgoing auto call record" android:key="auto_call_record_out" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" app:packageNameToKill="com.android.incallui" />
 	
-	<PreferenceCategory android:title=" Call Delay Control " app:packageNameToKill="com.android.incallui"/>
+	<PreferenceCategory android:title=" Call Delay Control " />
 	
-	<com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/call_delay_entries" android:title="Call delay" android:key="call_delay" android:summary="%s" android:defaultValue="2500" android:entryValues="@array/call_delay_values" />
+	<com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/call_delay_entries" android:title="Call delay" android:key="call_delay" android:summary="%s" android:defaultValue="2500" android:entryValues="@array/call_delay_values" app:isSilent="false" app:packageNameToKill="com.android.incallui" />
 	
 	<PreferenceCategory android:title=" InCallUI BG Control " />
 	
@@ -21,7 +21,7 @@
             android:key="enable_gear_custom_bg"
             android:summaryOff="Disabled"
             android:summaryOn="Enabled"
-            android:title="Enable custom background" app:packageNameToKill="com.android.incallui"/>
+            android:title="Enable custom background" app:isSilent="false" app:packageNameToKill="com.android.incallui"/>
 
         <PreferenceCategory
             android:dependency="enable_gear_custom_bg"
@@ -32,13 +32,13 @@
                 android:entryValues="@array/custom_bg_type_values"
                 android:key="gear_custom_bg_type"
                 android:title="Background type"
-                app:dependentValue="0" app:packageNameToKill="com.android.incallui"/>
+                app:dependentValue="0" app:isSilent="false" app:packageNameToKill="com.android.incallui"/>
             <com.wubydax.romcontrol.v2.prefs.MySeekBarPreference
                 android:defaultValue="255"
                 android:key="gear_bg_opacity"
                 android:title="Background opacity"
                 app:maxValue="255"
-                app:minValue="0" app:packageNameToKill="com.android.incallui"/>
+                app:minValue="0" app:isSilent="false" app:packageNameToKill="com.android.incallui"/>
         </PreferenceCategory>
 
         <PreferenceCategory
@@ -46,13 +46,13 @@
             android:title="Custom image preferences">
             <com.wubydax.romcontrol.v2.prefs.UriSelectionPreference
                 android:key="incallui_bg"
-                android:title="Select Bg image" app:packageNameToKill="com.android.incallui"/>
+                android:title="Select Bg image" app:isSilent="false" app:packageNameToKill="com.android.incallui"/>
             <com.wubydax.romcontrol.v2.prefs.MyListPreference
                 android:defaultValue="0"
                 android:entries="@array/crop_entries"
                 android:entryValues="@array/crop_values"
                 android:key="gear_bg_crop_type"
-                android:title="Set Image Scaling Type" app:packageNameToKill="com.android.incallui"/>
+                android:title="Set Image Scaling Type" app:isSilent="false" app:packageNameToKill="com.android.incallui"/>
         </PreferenceCategory>
 
         <PreferenceCategory
@@ -63,20 +63,21 @@
                 android:defaultValue="#00000000"
                 android:dependency="gear_custom_bg_type"
                 android:key="gear_bg_primary_color"
-                android:title="Select primary color" app:packageNameToKill="com.android.incallui"/>
+                android:title="Select primary color" app:isSilent="false" app:packageNameToKill="com.android.incallui"/>
             <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference
                 android:defaultValue="#00000000"
                 android:dependency="gear_custom_bg_type"
                 android:key="gear_second_gradient_color"
-                android:title="Secondary Color (for gradient)" app:packageNameToKill="com.android.incallui"/>
+                android:title="Secondary Color (for gradient)" app:isSilent="false" app:packageNameToKill="com.android.incallui"/>
             <com.wubydax.romcontrol.v2.prefs.MyListPreference
                 android:defaultValue="0"
                 android:dependency="gear_custom_bg_type"
                 android:entries="@array/gradient_entries"
                 android:entryValues="@array/gradient_values"
                 android:key="gear_bg_gradient_orientation"
-                android:title="Gradient orientation" app:packageNameToKill="com.android.incallui"/>
+                android:title="Gradient orientation" app:isSilent="false" app:packageNameToKill="com.android.incallui"/>
         </PreferenceCategory>
     </PreferenceScreen>   
+	
 	
 </PreferenceScreen>

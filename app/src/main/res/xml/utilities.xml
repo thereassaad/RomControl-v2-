@@ -13,14 +13,14 @@
 
 		<PreferenceCategory android:title=" Launcher Mods  " />
 		
-        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Wallpaper scrolling " android:key="wallpaper_scroll" android:summary="Disable Paralax Effect! Applys after Reboot" android:defaultValue="false" app:packageNameToKill="com.sec.android.app.launcher"/>
-        <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/tw_effect_entries" android:title="Touchwiz Page Effect" android:key="tw_page_effect" android:defaultValue="1" android:entryValues="@array/tw_effect_values" app:packageNameToKill="com.sec.android.app.launcher" />
-        <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/launcher_gesture_entries" android:title="Double tap" android:key="doubletap" android:summary="%s" android:entryValues="@array/launcher_gesture_values" app:packageNameToKill="com.sec.android.app.launcher"/>
-        <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/launcher_gesture_entries" android:title="Swipe Up" android:key="swipe_up" android:summary="%s" android:entryValues="@array/launcher_gesture_values" app:packageNameToKill="com.sec.android.app.launcher"/>
-        <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/launcher_gesture_entries" android:title="Swipe Down" android:key="swipe_down" android:summary="%s" android:entryValues="@array/launcher_gesture_values" app:packageNameToKill="com.sec.android.app.launcher"/>
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Wallpaper scrolling " android:key="wallpaper_scroll" android:summary="Disable Paralax Effect! Applys after Reboot" android:defaultValue="false" app:isSilent="false" app:packageNameToKill="com.sec.android.app.launcher"/>
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/tw_effect_entries" android:title="Touchwiz Page Effect" android:key="tw_page_effect" android:defaultValue="1" android:entryValues="@array/tw_effect_values" app:isSilent="false" app:packageNameToKill="com.sec.android.app.launcher" />
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/launcher_gesture_entries" android:title="Double tap" android:key="doubletap" android:summary="%s" android:entryValues="@array/launcher_gesture_values" app:isSilent="false" app:packageNameToKill="com.sec.android.app.launcher"/>
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/launcher_gesture_entries" android:title="Swipe Up" android:key="swipe_up" android:summary="%s" android:entryValues="@array/launcher_gesture_values" app:isSilent="false" app:packageNameToKill="com.sec.android.app.launcher"/>
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/launcher_gesture_entries" android:title="Swipe Down" android:key="swipe_down" android:summary="%s" android:entryValues="@array/launcher_gesture_values" app:isSilent="false" app:packageNameToKill="com.sec.android.app.launcher"/>
         
 		<PreferenceCategory android:title=" Colorized Launcher  " />
 		
-        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Icons Text color" android:key="launcher_icons_text_color" android:summary="Choose color. Reboot for apply" android:defaultValue="\#ffffffff" alphaSlider="true" hexValue="true" app:packageNameToKill="com.sec.android.app.launcher"/>
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Icons Text color" android:key="launcher_icons_text_color" android:summary="Choose color. Reboot for apply" android:defaultValue="\#ffffffff" alphaSlider="true" hexValue="true" app:isSilent="false" app:packageNameToKill="com.sec.android.app.launcher"/>
 
 </PreferenceScreen>

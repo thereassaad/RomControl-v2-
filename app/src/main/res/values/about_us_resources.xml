@@ -21,16 +21,19 @@
     for example xda icon for your xda thread, site icon for your site, facebook icon and so on-->
     <array name="about_contact_us_drawables">
         <item>@drawable/icon_2</item>
+		<item>@drawable/ther</item>
     </array>
 
     <!--In this array you will put the titles for your contact info items. Keep the order consistent between all 3 arrays-->
     <string-array name="about_contact_us_text">
         <item>XDA</item>
+		<item>ther Git</item>
     </string-array>
 
     <!--In this array you will put the titles for the URL strings that will open once a user clicked on the item-->
     <string-array name="about_contact_us_links" translatable="false">
         <item>http://forum.xda-developers.com/member.php?u=5405448</item>
+		<item>https://github.com/thereassaad/RomControl-v2-</item>
     </string-array>
 
 
@@ -38,12 +41,15 @@
     <!--Team info arrays-->
     <array name="about_team_drawables">
         <item>@drawable/icon_2</item>
+		<item>@drawable/ther</item>
     </array>
     <string-array name="about_team_names">
         <item>Developed by thereassaad</item>
+		<item>ther Github RomControl Source</item>
     </string-array>
     <string-array name="about_team_links" translatable="false">
         <item>http://forum.xda-developers.com/member.php?u=5405448</item>
+		<item>https://github.com/thereassaad/RomControl-v2-</item>
     </string-array>
 
 
