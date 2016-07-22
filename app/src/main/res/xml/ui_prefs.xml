@@ -83,7 +83,7 @@
     <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="StatusBar icon colors" android:key="sb_icon_color" android:defaultValue="-1" alphaSlider="true" hexValue="true" app:packageNameToKill="com.android.systemui"/>
 
     <PreferenceCategory android:title=" Signal Position " />
-    <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:entries="@array/SignalPositionName" android:title="Signal Position" android:key="leftsignal" android:defaultValue="0" android:entryValues="@array/SignalPositionValue" />
+    <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/SignalPositionName" android:title="Signal Position" android:key="leftsignal" android:defaultValue="0" android:entryValues="@array/SignalPositionValue" />
 
     <PreferenceCategory android:title=" QuickPanelTogglesColorized " />
     <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Use global color" android:key="sb_global_toggle" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" app:isSilent="false" app:packageNameToKill="com.android.systemui"/>
